@@ -1,0 +1,643 @@
+/*** Below are styles adopted from the main stylesheet ***/
+/*** Some disabling of stuff in the print version, is added at the bottom of this file ***/
+
+/********************************************
+ *      M  A  I  N     L  A  Y  O  U  T     *
+ ********************************************/
+ 
+#content,
+#main-container,
+#main  {
+  width: 100%!important; /* auto */ }
+
+/********************************************
+ *   H  T  M  L    E  L  E  M  E  N  T  S   *
+ ********************************************/
+ 
+body {
+  background:#fff;
+  color:#333;
+  font:11px Tahoma, Verdana, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0; } 
+tr.odd td, tr.even td {
+  padding: 0.3em; } 
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+  color: #444!important; } 
+h1 {
+  font-size: 1.15em; } /*  font-size: 1.3em; */
+h2 {
+  font-size: 1.1em; } /*  font-size: 1.2em; */
+h3 {
+  font-size: 1.04em; } 
+h4, h5, h6 {
+  font-size: 1.02em; } 
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.9em; } 
+fieldset {
+  border: 1px solid #ccc; } 
+pre {
+  background-color: #eee;
+  padding: 0.75em 1.5em;
+  font-size: 12px;
+  border: 1px solid #ddd; } 
+table {   /* make <td> sizes relative to body size! */
+  font-size: 1em; } 
+.item-list .title {
+  font-size: 1em;
+  color: #444; } 
+hr {
+  clear: none; /* So that horizontal rules don't clear out floating blocks */
+  background: none;
+  height: 1px;
+  border-width: 0;
+  color: #ccc; /* IE 6/7 */
+  background-color: #ccc; /* FF */
+  margin: 0.5em 0; /* FF */
+  _margin: 0; /* IE6 */
+  #margin: 0; /* IE7 */
+  } 
+  
+/**************************
+ *      L  I  N  K  S     *
+ **************************/
+a {
+  color:#069;
+  font-weight: normal; } 
+a:link,a:visited {
+  color:#069;
+  outline:none;
+  text-decoration:none } 
+a:hover,a:active {
+  color: #000;
+  text-decoration:none } 
+li a.active {
+  font-weight: bold;
+  text-decoration: none;
+  color: #444!important; } 
+  
+/****************************************
+ *    N  O  D  E    T  I  T  L  E  S    *
+ ****************************************/
+ 
+.title, .title a {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #444;
+  margin: 0 auto;  /* decrease default margins for h<x>.title */ } 
+.node .title { 
+  border-bottom: 1px solid #444;
+  margin-bottom: 2px; } 
+.node .node, #comments .comment {
+  padding: 4px 7px 7px 7px;
+  margin-bottom: 0;
+  border-width: 1px 2px 2px 1px;
+  border-style: solid;
+  border-color: #ccc; } 
+.node .content {
+  margin: 0 0 .5em 0;
+  padding: 2px; } 
+.node .node {
+  margin-bottom: 
+  0.4em; } 
+.title, .title a {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #444; } 
+.node .title, .node .title a {
+  font-weight: bold;
+  font-size: 14px;
+  color: #444; } 
+h1.title,
+.node .title,
+.node .title a,
+.node .title a:link,
+.node .title a:visited,
+.node .title a:hover {
+  color: #444;
+  font-size: 14px;
+  font-weight: bold; } 
+  h1.title,
+.node .title {
+  padding: 0 0 4px 0;
+  border-bottom: 1px solid #4273B5; } 
+  
+/**********************
+ *    L  I  S  T  S   *
+ **********************/
+ 
+#forum ul.links, 
+.node div.links ul.links {
+  display: list-item;
+  padding: 0;
+  margin: 4px 0 7px 10px!important; 
+  list-style-type: none;
+  border: none; } 
+#forum .links li, 
+.node div.links ul.links li  {
+  margin-left: 10px!important;
+  padding: 0!important;
+  display: list-item!important;
+  list-style-image: url(images/bullet_addnew.gif)!important;
+  border: none; } 
+  
+/********************************
+ *    U  N  S  O  R  T  E  D    *
+ ********************************/
+
+.site-name {
+  margin: 0.6em 0 0 ;
+  padding: 0;
+  font-size: 2em; } 
+.site-name a, 
+.site-name a:link, 
+.site-name a:visited, 
+.site-name a:hover {
+  color: #444!important;
+  font-weight: bold; } 
+#slogan {
+  display:block;
+  font-size:17px }
+li.openid-link, li.openid-processed {
+  display: block;
+  width: auto;
+  text-align: center; } 
+.meta {
+  margin-top: 1em; } 
+#block-menu-338 .content ul.menu {
+  list-style-type: none!important; } 
+.field-label {
+  margin-bottom: 0.3em; } 
+.filefield-item {
+  margin-bottom: 1em; } 
+.comment-bar {
+  width: 260px;
+  height: 14px;
+  float: right; } 
+.secondary-links a,
+.secondary-links a:link,
+.secondary-links a:visited {
+  color: #fff; } 
+.password-description {
+  font-size: 11px!important; } 
+.caption {
+  font-size: 11px; } 
+.feed-icon {
+  display: block;
+  margin: .7em 1.2em .4em 1.2em; } 
+  
+/***********************************************************
+ *   M  E  D  I  A  W  I  K  I    S  P  E  C  I  F  I  C   *
+ ***********************************************************/
+
+/*********************************************
+ * 0.9: New styles for the MediaWiki version *
+ *********************************************/
+
+.block .content {
+  padding: 7px 4px 7px 4px; }
+.node ul.links li {
+  padding: 0; }
+#nav {
+  border-bottom:1px solid #6997D3; /* #79A7E3; */
+  margin: 0;
+  padding: 4px 0 0 10px; }
+#nav .block, #nav .block .content, #nav ul.menu {
+  margin: 0;
+  padding: 0;
+  border: none; }
+#sidebar-left .block ul.menu {
+  margin: 0;
+  padding: 0 0 0 20px; }
+#sidebar-left li {
+  padding-left: 0!important;
+  margin-left: 0!important; }
+#main .content ul {
+  margin: 4px 0; 
+  padding: 0 0 0 20px; }
+#main .content ol {
+  margin: 4px 0; 
+  padding: 0 0 0 25px; }
+#main .content li {
+  padding-left: 0!important;
+  margin-left: 0!important; }
+#searchInput {
+  width: 136px!important;
+  margin-bottom: 4px; }
+
+#main .content ul li {
+  list-style-image: url(images/menu-leaf.gif)!important } 
+#main .content.expanded ul li {
+  list-style-image: url(images/menu-expanded.gif)!important } 
+#main .content ul li.collapsed {
+  list-style-image: url(images/menu-collapsed.gif)!important } 
+  
+#searchform {
+  margin: 0;
+  padding: 0; }
+#searchform div {
+  text-align: center;
+  margin: 0;
+  padding: 0; }
+.editButtons {
+  margin: 7px 0; }
+.editsection {
+  display: block;
+  color: #666;
+  font-size: 11px;
+  font-weight: normal;
+  float: right; } 
+h1, h2 {
+padding-bottom: .1em;
+border-bottom: 1px solid #999; }
+h1.site-name {
+  border: none; }
+a.new, .new a {
+  color: #d00!important; }
+a.new:hover, .new a:hover {
+  color: #f00!important; }
+.ril-notice {
+  margin: 0; }
+/**************************************************
+  Should be disabled here in the print stylesheet.
+  Instead we give it some top margin below.
+  Shows a "Retrieved from..." messaage. 
+ **************************************************
+.printfooter {
+  display: none; }
+*/
+.printfooter {
+  margin-top: 2em; }
+.catlinks {
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  padding: 5px;
+  margin-top: 1.2em;
+  clear: both; }
+.mw-specialpagesgroup { 
+  border-bottom: 1px solid #444;
+  padding-bottom: .1em; }
+  
+/**********************************************************************
+ *   I  M  P  O  R  T  E  D    F  R  O  M    M  O  N  O  B  O  O  K   *
+ **********************************************************************/
+
+/* general styles */
+
+table {
+	font-size: 100%;
+	color: black;
+	/* we don't want the bottom borders of <h2>s to be visible through
+	   floated tables */
+	background-color: white;
+}
+fieldset table {
+	/* but keep table layouts in forms clean... */
+	background: none;
+}
+dt {
+	font-weight: bold;
+	margin-bottom: .1em;
+}
+dl {
+	margin-top: .2em;
+	margin-bottom: .5em;
+}
+dd {
+	line-height: 1.5em;
+	margin-left: 2em;
+	margin-bottom: .1em;
+}
+
+fieldset {
+	border: 1px solid #ccc;
+	margin: 1em 0 1em 0;
+	padding: 0 1em 1em;
+	line-height: 1.5em;
+}
+fieldset.nested {
+	margin: 0 0 0.5em 0;
+	padding: 0 0.5em 0.5em;
+}
+legend {
+	padding: .5em;
+	font-size: 95%;
+}
+form {
+	border: none;
+	margin: 0;
+}
+
+textarea {
+	width: 99%;
+	padding: .1em;
+}
+
+input.historysubmit {
+	padding: 0 .3em .3em .3em !important;
+	font-size: 94%;
+	cursor: pointer;
+	height: 1.7em !important;
+	margin-left: 1.6em;
+}
+select {
+	vertical-align: top;
+}
+abbr, acronym, .explain {
+	border-bottom: 1px dotted black;
+	color: black;
+	background: none;
+	cursor: help;
+}
+q {
+	font-family: Times, "Times New Roman", serif;
+	font-style: italic;
+}
+/* disabled for now
+blockquote {
+	font-family: Times, "Times New Roman", serif;
+	font-style: italic;
+}*/
+code {
+	background-color: #f9f9f9;
+}
+pre {
+	padding: 1em;
+	border: 1px dashed #2f6fab;
+	color: black;
+	background-color: #f9f9f9;
+	line-height: 1.1em;
+}
+
+/* user notification thing */
+.usermessage {
+	background-color: #ffce7b;
+	border: 1px solid #ffa500;
+	color: black;
+	font-weight: bold;
+	margin: 2em 0 1em;
+	padding: .5em 1em;
+	vertical-align: middle;
+}
+#siteNotice {
+	text-align: center;
+	font-size: 95%;
+	padding: 0 .9em;
+}
+#siteNotice p {
+	margin: 0;
+	padding: 0;
+}
+.success {
+	color: green;
+	font-size: larger;
+}
+.error {
+	color: red;
+	font-size: larger;
+}
+.errorbox, .successbox {
+	font-size: larger;
+	border: 2px solid;
+	padding: .5em 1em;
+	float: left;
+	margin-bottom: 2em;
+	color: #000;
+}
+.errorbox {
+	border-color: red;
+	background-color: #fff2f2;
+}
+.successbox {
+	border-color: green;
+	background-color: #dfd;
+}
+.errorbox h2, .successbox h2 {
+	font-size: 1em;
+	font-weight: bold;
+	display: inline;
+	margin: 0 .5em 0 0;
+	border: none;
+}
+
+/* emulate center */
+.center {
+	width: 100%;
+	text-align: center;
+}
+*.center * {
+	margin-left: auto;
+	margin-right: auto;
+}
+/* small for tables and similar */
+.small, .small * {
+	font-size: 94%;
+}
+
+/*
+** content styles
+*/
+
+#toc,
+.toc,
+.mw-warning {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	font-size: 95%;
+}
+#toc h2,
+.toc h2 {
+	display: inline;
+	border: none;
+	padding: 0;
+	font-size: 100%;
+	font-weight: bold;
+}
+#toc #toctitle,
+.toc #toctitle,
+#toc .toctitle,
+.toc .toctitle {
+	text-align: center;
+}
+#toc ul,
+.toc ul {
+	list-style-type: none;
+	list-style-image: none;
+	margin-left: 0;
+	padding-left: 0;
+	text-align: left;
+}
+#toc ul ul,
+.toc ul ul {
+	margin: 0 0 0 2em;
+}
+#toc .toctoggle,
+.toc .toctoggle {
+	font-size: 94%;
+}
+
+.mw-warning {
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+}
+
+/* images */
+div.floatright, table.floatright {
+	clear: right;
+	float: right;
+	position: relative;
+	margin: 0 0 .5em .5em;
+	border: 0;
+/*
+	border: .5em solid white;
+	border-width: .5em 0 .8em 1.4em;
+*/
+}
+div.floatright p { font-style: italic; }
+div.floatleft, table.floatleft {
+	float: left;
+	clear: left;
+	position: relative;
+	margin: 0 .5em .5em 0;
+	border: 0;
+/*
+	margin: .3em .5em .5em 0;
+	border: .5em solid white;
+	border-width: .5em 1.4em .8em 0;
+*/
+}
+div.floatleft p { font-style: italic; }
+/* thumbnails */
+div.thumb {	
+	margin-bottom: .5em;
+	border-style: solid;
+	border-color: white;
+	width: auto;
+}
+div.thumbinner {
+	border: 1px solid #ccc;
+	padding: 3px !important;
+	background-color: #f9f9f9;
+	font-size: 94%;
+	text-align: center;
+	overflow: hidden;
+}
+html .thumbimage {
+	border: 1px solid #ccc;
+}
+html .thumbcaption {
+	border: none;
+	text-align: left;
+	line-height: 1.4em;
+	padding: 3px !important;
+	font-size: 94%;
+}
+div.magnify {
+	float: right;
+	border: none !important;
+	background: none !important;
+}
+div.magnify a, div.magnify img {
+	display: block;
+	border: none !important;
+	background: none !important;
+}
+div.tright {
+	clear: right;
+	float: right;
+	border-width: .5em 0 .8em 1.4em;
+}
+div.tleft {
+	float: left;
+	clear: left;
+	margin-right: .5em;
+	border-width: .5em 1.4em .8em 0;
+}
+img.thumbborder {
+	border: 1px solid #dddddd;
+}
+.hiddenStructure {
+	display: none;
+}
+
+/*
+** User styles
+*/
+/* table standards */
+table.rimage {
+	float: right;
+	position: relative;
+	margin-left: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+.toccolours {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	font-size: 95%;
+}
+
+/***********************************
+ *   M  I  S  C    F  I  X  E  S   *
+ ***********************************/
+
+
+/* This forces a div tag att the bottom of the #main div (which content go), to go below
+  the floated table, and so making the #main div large enough to contain the floated table.  */
+.mw_clear {
+ clear: both;
+}
+/* This avoids the #main box to be oversized in IE6 when a page contains floated boxes */
+#main .content {
+  width: 100%; }
+#footer img {
+  border: none; /* To ensure that there's no ugly borders around the icons */
+}
+.ril-notice
+ {
+  font-size: 9px;
+  color: #fff!important;
+}
+.ril-notice-tiny {
+  display: block;
+  width: auto;
+  text-align: right;
+  margin: 1em 0 .2em 0;
+  padding: 0 16px; }
+.ril-notice-tiny,
+.ril-notice-tiny a,
+.ril-notice-tiny a:link,
+.ril-notice-tiny a:visited,
+.ril-notice-tiny a:active,
+.ril-notice-tiny a:hover
+ {
+  font: 7px arial;
+  color: #B9D5FF!important;
+  text-transform: uppercase;
+}
+
+
+/*** Some stuff disabled in the print version ***/
+
+#mw_portlets,
+#p-cactions,
+#p-personal,
+#jump-to-nav,
+#footer,
+span.editsection,
+#header,
+.sidebar,
+#main .tabs,
+.subpages,
+#siteNotice
+{
+	display: none;
+}
+img {
+  border: none;
+}
