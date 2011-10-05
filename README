@@ -1,0 +1,36 @@
+== Overview ==
+
+The RilPoint MediaWiki Skin is based on the "Modern" MediaWiki skin, and "Bluemarine" Drupal Theme.
+Author: Samuel Lampa
+Contact: webmaster # rilpartner.se
+
+== Installation ==
+
+*Unpack the content of the tar-gzip archive into your skins folder under your MediaWiki install folder.
+*Set the <code>$wgDefaultSkin</code> variable in LocalSettings.php to "RilPoint".
+
+Example:
+ $wgDefaultSkin = 'rilpoint';
+
+== Enabling Main tabs ==
+
+*Edit the article named MediaWiki:Sidebar, and add a section named "RILPOINT_TABS", where you place your links.
+
+Example content of the MediaWiki:Sidebar article:
+
+<pre>
+* SEARCH
+* navigation
+** mainpage|mainpage-description
+** currentevents-url|currentevents
+** recentchanges-url|recentchanges
+** randompage-url|randompage
+* TOOLBOX
+* LANGUAGES
+* RILPOINT_TABS
+** Main Page|Home
+** Article 1|Article 1
+** Article 2|Article 2
+** Article 3|Article 3
+** http://www.example.com|Example.Com
+</pre>
